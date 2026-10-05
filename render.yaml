@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: polaris-backend
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "python run_backend.py"
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9

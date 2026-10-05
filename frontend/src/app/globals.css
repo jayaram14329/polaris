@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --background: #060d1f;
+  --foreground: #f8fafc;
+  --polar-navy: #0a1628;
+  --polar-cyan: #38bdf8;
+  --polar-ice: #e0f2fe;
+  --polar-teal: #14b8a6;
+}
+
+body {
+  background-color: #060d1f;
+  color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(20, 184, 166, 0.10) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(2, 132, 199, 0.08) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(15, 28, 54, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-card {
+  background: rgba(18, 32, 60, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.12);
+  transition: all 0.25s ease-in-out;
+}
+
+.glass-card:hover {
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 10px 25px -5px rgba(14, 165, 233, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Neon glow */
+.cyan-glow {
+  box-shadow: 0 0 20px -3px rgba(56, 189, 248, 0.35);
+}
+
+.teal-glow {
+  box-shadow: 0 0 20px -3px rgba(20, 184, 166, 0.35);
+}
+
+/* Custom Polar Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #081124;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3a68;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}

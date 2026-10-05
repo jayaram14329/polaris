@@ -1,0 +1,17 @@
+name: 24/7 Uptime Keep-Alive
+
+on:
+  schedule:
+    # Runs every 14 minutes to prevent Render free-tier from idling/sleeping
+    - cron: '*/14 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping POLARIS Backend
+        run: |
+          TARGET_URL="${{ secrets.POLARIS_BACKEND_URL || 'https://polaris-backend.onrender.com' }}"
+          echo "Sending keep-alive heartbeat to: ${TARGET_URL}/health"
+          curl -s -f -m 30 "${TARGET_URL}/health" || curl -s -m 45 "${TARGET_URL}/" || echo "Heartbeat ping dispatched"

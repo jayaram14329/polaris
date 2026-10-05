@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    container_name: polaris_backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PROJECT_NAME=POLARIS
+      - SECRET_KEY=polaris_sih26063_super_secret_jwt_key_ncpor_moes
+      - ACCESS_TOKEN_EXPIRE_MINUTES=1440
+    volumes:
+      - ./database:/app/database
+      - ./sample-data:/app/sample-data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    container_name: polaris_frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:8000/api
+    depends_on:
+      - backend
+
+networks:
+  default:
+    name: polaris_network
