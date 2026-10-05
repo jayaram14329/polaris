@@ -1,0 +1,143 @@
+1
+00:00:00,000 --> 00:00:09,430
+Polar research across Antarctica, the Arctic, and the Himalayas generates critical reports, datasets, and media.
+
+2
+00:00:09,430 --> 00:00:18,860
+However, these valuable resources remain distributed across isolated repositories, creating discovery challenges.
+
+3
+00:00:18,860 --> 00:00:26,910
+Smart India Hackathon problem SIH26063 by the Ministry of Earth Sciences calls for an integrated portal:
+
+4
+00:00:26,910 --> 00:00:34,960
+Unifying an archival knowledge repository with an intelligent media dissemination system for public outreach.
+
+5
+00:00:34,960 --> 00:00:42,050
+POLARIS, the Polar Knowledge and Outreach Intelligence System, is our proposed prototype solution,
+
+6
+00:00:42,050 --> 00:00:49,140
+Connecting research archives, structured search, AI discovery, STEM education, and human-governed outreach.
+
+7
+00:00:49,140 --> 00:00:56,605
+Designed for India complete tri-polar scope, POLARIS connects Antarctic stations Maitri and Bharati,
+
+8
+00:00:56,605 --> 00:01:04,070
+Arctic facilities Himadri and IndARC, and the Himalayan cryosphere at Himansh, linking research with media.
+
+9
+00:01:04,070 --> 00:01:11,115
+Authorized researchers ingest heterogeneous research resources through a structured pipeline:
+
+10
+00:01:11,115 --> 00:01:18,160
+Extracting document text, processing legacy scanned logs with OCR, and validating records with FAIR metadata.
+
+11
+00:01:18,160 --> 00:01:25,230
+The processed information is organized within a central repository, combining relational metadata in PostgreSQL,
+
+12
+00:01:25,230 --> 00:01:32,300
+Dense vector representations in pgvector, and raw research media in object storage for auditable preservation.
+
+13
+00:01:32,300 --> 00:01:39,450
+Rather than relying solely on exact keywords, POLARIS combines keyword and semantic search.
+
+14
+00:01:39,450 --> 00:01:46,600
+When querying Antarctic climate observations, relevant reports, publications, datasets, and photos emerge together.
+
+15
+00:01:46,600 --> 00:01:53,165
+The public discovery layer features an interactive station telemetry and GIS exploration view,
+
+16
+00:01:53,165 --> 00:01:59,730
+Allowing students and citizens to explore Indian polar stations, historical expeditions, timelines, and verified media.
+
+17
+00:01:59,730 --> 00:02:07,230
+POLAR AI utilizes retrieval-augmented generation to answer scientific inquiries.
+
+18
+00:02:07,230 --> 00:02:14,730
+The system provides evidence-grounded responses, citing exact source documents, expedition years, and report sections.
+
+19
+00:02:14,730 --> 00:02:20,885
+Through the Polar Academy, verified scientific knowledge is transformed into student-friendly explainers,
+
+20
+00:02:20,885 --> 00:02:27,040
+Interactive cryosphere learning modules, STEM quizzes, and classroom resources for educators.
+
+21
+00:02:27,040 --> 00:02:33,210
+Outreach Studio helps science communicators convert selected research sources into structured drafts
+
+22
+00:02:33,210 --> 00:02:39,380
+Tailored for official websites, press releases, social media, and student educational portals.
+
+23
+00:02:39,380 --> 00:02:46,305
+Crucially, AI never publishes autonomously. Every generated draft undergoes citation verification
+
+24
+00:02:46,305 --> 00:02:53,230
+And mandatory review by a human science editor before dissemination, while unapproved drafts return for revision.
+
+25
+00:02:53,230 --> 00:02:59,555
+From raw field observations and laboratory reports to structured storage, hybrid search, and AI assistance,
+
+26
+00:02:59,555 --> 00:03:05,880
+POLARIS delivers the complete end-to-end knowledge and science dissemination lifecycle.
+
+27
+00:03:05,880 --> 00:03:13,450
+Key expected outcomes include a unified polar knowledge repository, faster resource discovery,
+
+28
+00:03:13,450 --> 00:03:21,020
+Traceable AI assistance with citations, accessible STEM education, and controlled institutional science outreach.
+
+29
+00:03:21,020 --> 00:03:27,800
+POLARIS serves researchers seeking cross-expedition datasets, educators teaching climate science,
+
+30
+00:03:27,800 --> 00:03:34,580
+Students discovering polar research, outreach officers crafting verified media, and institutions preserving heritage.
+
+31
+00:03:34,580 --> 00:03:42,055
+The prototype uses proven technologies: Next.js and TypeScript on frontend, FastAPI and Python backend,
+
+32
+00:03:42,055 --> 00:03:49,530
+PostgreSQL and pgvector storage, and containerized Docker deployment, ensuring feasibility and extensibility.
+
+33
+00:03:49,530 --> 00:03:55,975
+Because the platform handles scientific and institutional knowledge, role-based access control,
+
+34
+00:03:55,975 --> 00:04:02,420
+Cryptographic verification, end-to-end audit logging, and strict human editorial review are built into every workflow.
+
+35
+00:04:02,420 --> 00:04:09,450
+POLARIS is not just a document repository and not an ungrounded chatbot. It is a proposed integrated ecosystem
+
+36
+00:04:09,450 --> 00:04:16,480
+Connecting polar research, verified knowledge, and meaningful outreach for the nation. Thank you.

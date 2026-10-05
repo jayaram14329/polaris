@@ -1,0 +1,397 @@
+========================================================================================
+POLARIS: Polar Knowledge & Outreach Intelligence System
+SMART INDIA HACKATHON 2026 | PROBLEM STATEMENT ID: SIH26063
+ORGANIZATION: Ministry of Earth Sciences (MoES) / NCPOR
+OFFICIAL JURY-ORIENTED PROJECT EXPLAINER VIDEO SCRIPT
+========================================================================================
+
+PROJECT SUMMARY:
+POLARIS is an integrated polar science outreach portal and knowledge lake prototype 
+uniting India's 40+ years of Antarctic, Arctic, and Himalayan cryosphere research. 
+It connects scientific preservation, structured search, citation-grounded AI discovery, 
+STEM education, and human-governed media outreach.
+
+TARGET EVALUATION AUDIENCE:
+• Ministry of Earth Sciences (MoES) Representatives
+• National Centre for Polar and Ocean Research (NCPOR) Scientists
+• SIH Technical & Architectural Jury
+• Domain, Educational & Science Communication Evaluators
+
+TOTAL VIDEO DURATION: 04:16 (256.48 seconds)
+AUDIO NARRATION VOICE: en-IN-PrabhatNeural (Clear, Confident, Scientific Indian English)
+BACKGROUND AUDIO: Gentle Ambient Harmonic Scientific Drone (-22dB level)
+OUTPUT VIDEO FORMAT: 1920x1080 Full HD (16:9), H.264 / AAC, Embedded Subtitle Track
+
+========================================================================================
+SCENE-BY-SCENE COMPLETE TRANSCRIPT, TIMESTAMPS & JURY MAPPING
+========================================================================================
+
+----------------------------------------------------------------------------------------
+SCENE 01 — OPENING & PROBLEM STATEMENT ANALYSIS
+----------------------------------------------------------------------------------------
+Timestamp: 00:00:00 --> 00:00:18,860 (Duration: 18.86s)
+Category: Problem Analysis
+Badge: PROBLEM STATEMENT CONTEXT
+On-Screen Subtitle:
+"Polar knowledge is valuable — but distributed across reports, datasets, publications, media and institutional activities."
+
+Visual Elements:
+- Split comparison: India's 40+ years of tri-polar research assets vs. current fragmentation bottlenecks.
+- List of assets: 40+ Indian Scientific Expeditions to Antarctica (ISEA), Arctic logs from Himadri & IndARC, 
+  and Himalayan glaciological records from Himansh.
+- Barrier highlights: Heterogeneous file formats, siloed institutional databases, and steep discovery overhead.
+
+Voiceover Narration:
+"Polar research across the Antarctic, Arctic, and Himalayan cryosphere generates valuable reports, datasets, publications, photographs, and media. However, these resources remain distributed across isolated repositories and formats, creating significant discovery and outreach challenges."
+
+Jury Question Answered:
+Q1. What exactly is the problem?
+Q2. Why is the existing situation difficult?
+Q3. What information needs to be brought together?
+
+----------------------------------------------------------------------------------------
+SCENE 02 — WHAT SIH26063 ACTUALLY ASKS FOR
+----------------------------------------------------------------------------------------
+Timestamp: 00:00:18,860 --> 00:00:34,960 (Duration: 16.10s)
+Category: Requirement Analysis
+Badge: OFFICIAL PROBLEM STATEMENT
+Visual Elements:
+- Verbatim quote of Ministry of Earth Sciences Problem Description SIH26063.
+- Two core pillars displayed side-by-side:
+  • PILLAR 1: KNOWLEDGE REPOSITORY (Expedition reports, datasets, publications, photos, videos, institutional activities).
+  • PILLAR 2: MEDIA DISSEMINATION (Website articles, social media threads, student explainers, STEM quizzes).
+- Bidirectional arrow highlighting the unified knowledge lifecycle.
+
+Voiceover Narration:
+"Smart India Hackathon problem SIH26063 by the Ministry of Earth Sciences calls for an integrated portal: unifying an archival knowledge repository with an intelligent media dissemination system for public and educational outreach."
+
+Jury Question Answered:
+Q3. What information needs to be brought together?
+Q16. What makes POLARIS different from a normal website or generic CMS?
+
+----------------------------------------------------------------------------------------
+SCENE 03 — INTRODUCE POLARIS
+----------------------------------------------------------------------------------------
+Timestamp: 00:00:34,960 --> 00:00:49,140 (Duration: 14.18s)
+Category: System Overview
+Badge: PROPOSED PROTOTYPE PLATFORM
+Visual Elements:
+- POLARIS Brand Emblem in Ice Blue & Cyan.
+- Platform definition: "Polar Knowledge & Outreach Intelligence System".
+- Five foundational cards: Structured Repository, Hybrid Search Engine, POLAR AI Assistant, 
+  Polar Academy, and Outreach Studio.
+- Prominent disclaimer: "POLARIS is a proposed prototype solution designed for SIH26063."
+
+Voiceover Narration:
+"POLARIS, the Polar Knowledge and Outreach Intelligence System, is our proposed prototype solution, connecting research archives, structured search, AI-assisted understanding, STEM education, and human-governed outreach in one platform."
+
+Jury Question Answered:
+Q5. What exactly does POLARIS provide?
+
+----------------------------------------------------------------------------------------
+SCENE 04 — THREE-REGION POLAR SCOPE (KEY DIFFERENTIATOR)
+----------------------------------------------------------------------------------------
+Timestamp: 00:00:49,140 --> 00:01:04,070 (Duration: 14.93s)
+Category: Geographic Scope
+Badge: EXPEDITION SCOPE
+Visual Elements:
+- Three dedicated regional panels:
+  1. ANTARCTICA: Maitri & Bharati Research Stations (Larsemann Hills & Schirmacher Oasis).
+  2. ARCTIC: Himadri Station (Ny-Ålesund) & IndARC Underwater Moored Array (Kongsfjorden).
+  3. HIMALAYAN CRYOSPHERE: Himansh Research Station (Spiti Valley, 4,080m elevation).
+- National relevance note: Tri-polar linkage connecting high-latitude polar ice with Himalayan freshwater security.
+
+Voiceover Narration:
+"Designed for India's complete tri-polar scope, POLARIS connects the Antarctic stations Maitri and Bharati, Arctic facilities Himadri and IndARC, and the Himalayan cryosphere at Himansh, linking scientific data with institutional media."
+
+Jury Question Answered:
+Q3. What information needs to be brought together?
+Q16. What makes POLARIS different from single-mission portals?
+
+----------------------------------------------------------------------------------------
+SCENE 05 — DATA INGESTION PIPELINE
+----------------------------------------------------------------------------------------
+Timestamp: 00:01:04,070 --> 00:01:18,160 (Duration: 14.09s)
+Category: Data Ingestion Pipeline
+Badge: INGESTION SUBSYSTEM
+Visual Elements:
+- ISO/IEEE modular engineering process diagram:
+  [Data Sources] -> [Upload] -> [PyMuPDF Text Extract] -> [Tesseract OCR] -> [FAIR Metadata] -> [Validate].
+- Supported formats: PDF reports, NetCDF datasets, CSV telemetry, images, video footage.
+- SHA-256 verification and Schema.org metadata tagging.
+
+Voiceover Narration:
+"Authorized researchers and curators ingest heterogeneous research resources through a structured pipeline: extracting document text, processing legacy scanned logs with OCR, and validating records with standardized FAIR metadata."
+
+Jury Question Answered:
+Q6. How does information enter the system?
+Q7. How is it organized?
+
+----------------------------------------------------------------------------------------
+SCENE 06 — KNOWLEDGE REPOSITORY ARCHITECTURE
+----------------------------------------------------------------------------------------
+Timestamp: 00:01:18,160 --> 00:01:32,300 (Duration: 14.14s)
+Category: Data Architecture
+Badge: KNOWLEDGE LAKE
+Visual Elements:
+- Architectural diagram showing:
+  • PostgreSQL 16 relational catalog for structured metadata, authors, and timestamps.
+  • pgvector vector index for dense semantic embeddings.
+  • MinIO / S3 object storage for raw reports, high-resolution photography, and sensor archives.
+- Prominent triad badges: [STRUCTURED] • [SEARCHABLE] • [AUDITABLE].
+
+Voiceover Narration:
+"The processed information is organized within a central repository, combining relational metadata in PostgreSQL, dense vector representations in pgvector, and raw research media in object storage for auditable preservation."
+
+Jury Question Answered:
+Q7. How is knowledge organized and stored?
+Q15. Why is this technically feasible and robust?
+
+----------------------------------------------------------------------------------------
+SCENE 07 — HYBRID SEARCH ENGINE
+----------------------------------------------------------------------------------------
+Timestamp: 00:01:32,300 --> 00:01:46,600 (Duration: 14.30s)
+Category: Search & Discovery
+Badge: SEARCH SUBSYSTEM
+Visual Elements:
+- Interactive query box: "Antarctic expedition climate observations in Larsemann Hills".
+- Dual-path retrieval demonstration:
+  • Path A: Exact Keyword Matching (BM25) for station IDs, authors, and dates.
+  • Path B: Dense Vector Similarity for conceptual and thematic exploration.
+- Integrated search results displaying an expedition PDF report, a CSV weather dataset, 
+  a peer-reviewed paper, and an archival photograph simultaneously.
+
+Voiceover Narration:
+"Rather than relying solely on exact keywords, POLARIS combines keyword and semantic search. When querying Antarctic climate observations, relevant reports, publications, datasets, and photographs emerge together."
+
+Jury Question Answered:
+Q8. How is knowledge searched?
+
+----------------------------------------------------------------------------------------
+SCENE 08 — PUBLIC DISCOVERY & POLAR STATION GIS
+----------------------------------------------------------------------------------------
+Timestamp: 00:01:46,600 --> 00:01:59,730 (Duration: 13.13s)
+Category: Public Discovery
+Badge: PROTOTYPE GIS DEMO
+Visual Elements:
+- High-definition screenshot of the live POLARIS GIS interface.
+- Map markers for Bharati, Maitri, Himadri, and IndARC with simulated live telemetry.
+- Expedition timeline selector (1981–2026).
+- Prominent watermark: "PROTOTYPE / DEMO DATA (SIMULATED FOR EVALUATION)".
+
+Voiceover Narration:
+"The public discovery layer features an interactive station telemetry and GIS exploration view, allowing students and citizens to explore Indian polar stations, historical expeditions, timelines, and verified media."
+
+Jury Question Answered:
+Q5. What does POLARIS provide to the public?
+Q17. What is prototype/demo versus official data?
+
+----------------------------------------------------------------------------------------
+SCENE 09 — EVIDENCE-GROUNDED POLAR AI (RAG)
+----------------------------------------------------------------------------------------
+Timestamp: 00:01:59,730 --> 00:02:14,730 (Duration: 15.00s)
+Category: AI-Assisted Discovery
+Badge: EVIDENCE-GROUNDED RAG
+Visual Elements:
+- Screenshot of POLAR AI assistant answering a polar meteorology query.
+- Step flow: User Query -> Dense Retrieval -> Re-ranking -> LLM Generation -> Evidence Citations.
+- Explicit citation card highlighting: Document Title, Expedition Year, Section, and Page Number.
+- High-contrast banner: "EVIDENCE-GROUNDED RESPONSES • ZERO UNVERIFIED CLAIMS • FULL CITATION TRACEABILITY".
+
+Voiceover Narration:
+"POLAR AI uses retrieval-augmented generation to answer scientific inquiries. The system provides evidence-grounded responses, citing exact source documents, expedition years, and report sections so users can verify every claim."
+
+Jury Question Answered:
+Q9. How does AI help?
+Q10. How are AI responses verified and grounded?
+
+----------------------------------------------------------------------------------------
+SCENE 10 — POLAR ACADEMY & STEM EDUCATION
+----------------------------------------------------------------------------------------
+Timestamp: 00:02:14,730 --> 00:02:27,040 (Duration: 12.31s)
+Category: Education Subsystem
+Badge: ACADEMY SUBSYSTEM
+Visual Elements:
+- Transformation visual: Complex academic paper -> Simplified student concept module.
+- Screenshot of Polar Academy interactive quiz module.
+- Educational features: Visual albedo explainers, sea-ice change visualizations, and self-evaluating quizzes.
+
+Voiceover Narration:
+"Through the Polar Academy, verified scientific knowledge is transformed into student-friendly explainers, interactive cryosphere learning modules, STEM quizzes, and classroom resources for educators."
+
+Jury Question Answered:
+Q11. How does education and learning happen?
+
+----------------------------------------------------------------------------------------
+SCENE 11 — OUTREACH STUDIO (MULTI-CHANNEL DRAFTING)
+----------------------------------------------------------------------------------------
+Timestamp: 00:02:27,040 --> 00:02:39,380 (Duration: 12.34s)
+Category: Science Communication
+Badge: OUTREACH STUDIO
+Visual Elements:
+- Screenshot of the live Outreach Studio drafting interface.
+- Source document selection (e.g. Arctic IndARC Expedition Report).
+- Three generated draft variants:
+  1. Formal Institutional Web Article / Press Release.
+  2. Multi-post Social Media Science Thread (X, LinkedIn).
+  3. School Science Newsletter Explainer.
+- Callout: "AI drafts are generated strictly from selected source material; no autonomous publishing."
+
+Voiceover Narration:
+"Outreach Studio helps science communicators convert selected research sources into structured drafts tailored for official websites, press releases, social media, and student educational portals."
+
+Jury Question Answered:
+Q12. How is outreach content generated?
+
+----------------------------------------------------------------------------------------
+SCENE 12 — HUMAN SCIENCE EDITORIAL GOVERNANCE (HUMAN-IN-THE-LOOP)
+----------------------------------------------------------------------------------------
+Timestamp: 00:02:39,380 --> 00:02:53,230 (Duration: 13.85s)
+Category: Editorial Governance
+Badge: HUMAN-IN-THE-LOOP GOVERNANCE
+Visual Elements:
+- Prominent engineering decision tree:
+  [AI Draft] -> [Citation Verification] -> [Human Science Editor Review] -> Decision Diamond.
+  • Branch YES (Green): Digital signature -> Dissemination queue -> Public dispatch.
+  • Branch NO (Red): Editorial feedback attached -> Returned to Outreach Studio queue.
+- Restrained Amber highlighting to designate editorial review states.
+- High-visibility banner: "AI NEVER PUBLISHES DIRECTLY • COMPLETE EDITORIAL ACCOUNTABILITY".
+
+Voiceover Narration:
+"Crucially, AI never publishes autonomously. Every generated draft undergoes citation verification and mandatory review by a human science editor before dissemination, while unapproved drafts return for revision."
+
+Jury Question Answered:
+Q13. Who approves public-facing content?
+Q17. How does the system prevent hallucinations from reaching the public?
+
+----------------------------------------------------------------------------------------
+SCENE 13 — COMPLETE POLARIS KNOWLEDGE LIFECYCLE
+----------------------------------------------------------------------------------------
+Timestamp: 00:02:53,230 --> 00:03:05,880 (Duration: 12.65s)
+Category: Complete System Lifecycle
+Badge: COMPLETE WORKFLOW
+Visual Elements:
+- High-resolution end-to-end architecture diagram:
+  Field Research & Sensors -> Structured Lake -> Hybrid Retrieval -> AI & Academy -> 
+  Human Editorial Gate -> Multi-Channel Dissemination.
+- Connective narrative: "A unified bridge connecting field scientists in Antarctica with students in Indian classrooms."
+
+Voiceover Narration:
+"From raw field observations and laboratory reports to structured storage, hybrid search, evidence-backed AI, STEM learning, and human-governed outreach, POLARIS delivers the complete knowledge lifecycle."
+
+Jury Question Answered:
+Q5. What exactly does POLARIS provide end-to-end?
+Q16. What differentiates POLARIS from ordinary standalone tools?
+
+----------------------------------------------------------------------------------------
+SCENE 14 — CONCRETE EXPECTED OUTCOMES
+----------------------------------------------------------------------------------------
+Timestamp: 00:03:05,880 --> 00:03:21,020 (Duration: 15.14s)
+Category: Expected Outcomes
+Badge: EVALUATION CRITERIA
+Visual Elements:
+- Seven structured outcome cards:
+  1. Unified Polar Knowledge Lake
+  2. Accelerated Knowledge Discovery
+  3. Traceable AI Assistance with Citations
+  4. Democratized STEM Education
+  5. Governed Science Outreach
+  6. Long-Term Heritage Preservation
+  7. Complete Tri-Polar Geographic Scope
+- Grounded claims with zero unsupported percentage exaggerations.
+
+Voiceover Narration:
+"Key expected outcomes include a unified polar knowledge repository, faster resource discovery, traceable AI assistance with citations, accessible STEM education, and controlled institutional science outreach across all three polar regions."
+
+Jury Question Answered:
+Q14. What are the expected outcomes?
+Q17. What is the real-world impact?
+
+----------------------------------------------------------------------------------------
+SCENE 15 — TARGET BENEFICIARIES & STAKEHOLDERS
+----------------------------------------------------------------------------------------
+Timestamp: 00:03:21,020 --> 00:03:34,580 (Duration: 13.56s)
+Category: Target Beneficiaries
+Badge: STAKEHOLDER IMPACT
+Visual Elements:
+- Five distinct stakeholder cards with domain icons:
+  • Researchers & Scientists: Cross-expedition correlation and open dataset reuse.
+  • Educators: Verified curriculum materials and interactive modules.
+  • Students: Immersive station telemetry and STEM curiosity building.
+  • Science Communicators: Rapid, grounded drafting tools.
+  • MoES / NCPOR: Long-term institutional heritage preservation and auditable dissemination.
+
+Voiceover Narration:
+"POLARIS serves researchers seeking cross-expedition datasets, educators teaching climate science, students discovering polar research, outreach officers crafting verified media, and institutions preserving national heritage."
+
+Jury Question Answered:
+Q4. Who will use the platform?
+Q17. What is the real-world societal impact?
+
+----------------------------------------------------------------------------------------
+SCENE 16 — TECHNICAL FEASIBILITY & MODULAR STACK
+----------------------------------------------------------------------------------------
+Timestamp: 00:03:34,580 --> 00:03:49,530 (Duration: 14.95s)
+Category: Technical Feasibility
+Badge: TECHNICAL FEASIBILITY
+Visual Elements:
+- Seven-layer technology stack matrix:
+  • Frontend: Next.js 16, React 19, TypeScript, Tailwind CSS
+  • Backend: FastAPI, Python 3.11, Pydantic v2
+  • Data: PostgreSQL 16, pgvector, MinIO / S3
+  • AI: Sentence Transformers, Semantic Vector Embeddings, RAG Engine
+  • Ingestion: PyMuPDF, Tesseract OCR Engine
+  • Geospatial: Leaflet, OpenStreetMap GIS
+  • Deployment: Docker, Docker Compose, Git CI/CD
+- Feasibility note: 100% open-source software stack with zero proprietary licensing bottlenecks.
+
+Voiceover Narration:
+"The prototype uses proven technologies: Next.js and TypeScript on the frontend, FastAPI and Python backend, PostgreSQL and pgvector storage, and containerized Docker deployment, ensuring technical feasibility and extensibility."
+
+Jury Question Answered:
+Q15. Why is this feasible?
+Q16. What is the software architecture?
+
+----------------------------------------------------------------------------------------
+SCENE 17 — GOVERNANCE, SECURITY & CREDIBILITY
+----------------------------------------------------------------------------------------
+Timestamp: 00:03:49,530 --> 00:04:02,420 (Duration: 12.89s)
+Category: Governance & Security
+Badge: INSTITUTIONAL GOVERNANCE
+Visual Elements:
+- Four institutional credibility pillars:
+  1. Role-Based Access Control (RBAC): Public, Researcher, Editor, System Admin.
+  2. Comprehensive Audit Trails: Tamper-evident logging of every upload, prompt, and edit.
+  3. Cryptographic Verification: SHA-256 evidence integrity hashing.
+  4. Mandatory Citations on All AI Outputs: Zero unreferenced claims.
+
+Voiceover Narration:
+"Because the platform handles scientific and institutional knowledge, role-based access control, cryptographic verification, end-to-end audit logging, and strict human editorial review are built into every workflow."
+
+Jury Question Answered:
+Q10. How are AI responses verified?
+Q13. Who approves public-facing content?
+Q17. How is institutional credibility protected?
+
+----------------------------------------------------------------------------------------
+SCENE 18 — FINAL JURY SUMMARY & VISION
+----------------------------------------------------------------------------------------
+Timestamp: 00:04:02,420 --> 00:04:16,480 (Duration: 14.06s)
+Category: Summary & Vision
+Badge: SIH26063 JURY CONCLUSION
+Visual Elements:
+- Grand summary banner:
+  "FROM POLAR RESEARCH → TO VERIFIED KNOWLEDGE → TO MEANINGFUL OUTREACH"
+- Four juror takeaways: Mandate Alignment, Working Prototype, Responsible AI, Modular & Extensible.
+- Formal closing credits: Smart India Hackathon 2026 | Team POLARIS | Ministry of Earth Sciences (MoES) / NCPOR.
+
+Voiceover Narration:
+"POLARIS is not just a document repository and not an ungrounded chatbot. It is a proposed integrated ecosystem connecting polar research, verified knowledge, and meaningful outreach for the nation. Thank you."
+
+Jury Question Answered:
+Q16. What differentiates POLARIS?
+Q17. What is the final conclusion for the jury?
+
+========================================================================================
+END OF VOICEOVER SCRIPT
+========================================================================================
