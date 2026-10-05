@@ -43,7 +43,7 @@ import {
 
 const getApiBase = () => {
   const envUrl = process.env.NEXT_PUBLIC_API_URL;
-  if (!envUrl) return "http://localhost:8000/api";
+  if (!envUrl) return "/api";
   const trimmed = envUrl.replace(/\/+$/, "");
   return trimmed.endsWith("/api") ? trimmed : `${trimmed}/api`;
 };
